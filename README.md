@@ -49,7 +49,7 @@ To install, run the script
 
 ```bash
 $ sudo ./mc_syntax-install_global.sh
-$ # or
+$ #OR
 $ ./mc_syntax-install_user.sh
 ```
 
