@@ -30,14 +30,15 @@ $ cp ./syntax/json.syntax  ~/.config/mc/mcedit
 
 You need to register new file type in your `Syntax` file.
 
-Create a file `Syntax`
+Copy a global file `Syntax`
 
 ```bash
-$ >>~/.config/mc/mcedit/Syntax
+$ mkdir -p .config/mc/mcedit
+$ cp /usr/share/mc/syntax/Syntax .config/mc/mcedit
 $ chmod 644 ~/.config/mc/mcedit/Syntax
 ```
 
-Insert text (replace <user> with your user name):
+Insert text before the block `unknown`. Replace <user> with your user name.
 
 ```
 file ..\*\\.json$ JSON\sFile
