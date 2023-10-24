@@ -30,7 +30,7 @@ $ cp ./syntax/json.syntax ~/.local/share/mc/syntax
 
 You need to register new file type in your `Syntax` file.
 
-Create the file `Syntax`
+Create a file `Syntax`
 
 ```bash
 $ >>~/.local/share/mc/syntax/Syntax
