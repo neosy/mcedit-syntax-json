@@ -14,7 +14,7 @@ $ cp ./syntax/json.syntax /usr/share/mc/syntax
 
 You need to register new file type in your `Syntax` file, by adding following lines before `unknown` file `/usr/share/mc/syntax/Syntax` 
 
-Insert the text:
+Insert text:
 
 ```
 file ..\*\\.json$ JSON\sFile
@@ -37,7 +37,7 @@ $ >>~/.local/share/mc/syntax/Syntax
 $ chmod 644 ~/.local/share/mc/syntax/Syntax
 ```
 
-Insert the text:
+Insert text:
 
 ```
 file ..\*\\.json$ JSON\sFile
