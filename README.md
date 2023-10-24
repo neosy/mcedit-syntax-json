@@ -8,8 +8,8 @@ Copy the json.syntax into your syntax folder `/usr/share/mc/syntax/`, or if you 
 
 You need to register new file type in your `Syntax` file, by adding following lines before `unknown` file type
 
-    file ..\*\\.(tf|tfvars)$ Terraform
-    include tf.syntax
+    file ..\*\\.json$ JSON\sFile
+    include json.syntax
 
 `Syntax` file usually can be found in `/usr/share/mc/syntax/Syntax` or `$HOME/.config/mc/mcedit/Syntax`
 
