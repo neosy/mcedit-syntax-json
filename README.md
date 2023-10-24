@@ -2,8 +2,7 @@
 This package can be used to generate mcedit (Midnight Commander) syntax file for JSON (.json) file format highlighting.
 
 ## Adding into mcedit
-You can generate new json.syntax with different color scheme
-
+### Manually
 Copy the json.syntax into your syntax folder `/usr/share/mc/syntax/`, or if you are using user-specific configuration, than `$HOME/.local/share/mc/mcedit/`.
 
 You need to register new file type in your `Syntax` file, by adding following lines before `unknown` file type
@@ -12,6 +11,11 @@ You need to register new file type in your `Syntax` file, by adding following li
     include json.syntax
 
 `Syntax` file usually can be found in `/usr/share/mc/syntax/Syntax` or `$HOME/.config/mc/mcedit/Syntax`
+
+### Using a script
+To install, run the script
+
+    sudo ./mc_syntax-install.sh
 
 ## Preview
 ![JSON_syntax_highlighter_for_mcedit](https://github.com/neosy/mcedit-syntax-json/assets/105918329/497c637a-2826-4f3e-bbe5-ce76d2765661)
