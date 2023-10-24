@@ -48,7 +48,9 @@ include /home/<user>/.config/mc/mcedit/json.syntax
 To install, run the script
 
 ```bash
-$ sudo ./mc_syntax-install.sh
+$ sudo ./mc_syntax-install_global.sh
+$ # or
+$ ./mc_syntax-install_user.sh
 ```
 
 Now the syntax highlighting should work
