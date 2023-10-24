@@ -44,8 +44,8 @@ txt1=`cat $SYNTAX_FILE | head -n ${line_num_before}`
 txt2=`cat $SYNTAX_FILE | tail -n +${line_num_before}`
 
 text="${txt1}"
-text+=$(echo $'\n' && cat ${SYNTAX_ADD_FILE})
-text+=$(echo '' && echo "${txt2}")
+text+=$(echo $'\n' && echo "${text_ins}")
+text+=$(echo $'' && echo "${txt2}")
 
 echo "$text" > $SYNTAX_FILE
 
