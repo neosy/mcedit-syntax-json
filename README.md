@@ -33,7 +33,6 @@ You need to register new file type in your `Syntax` file.
 Copy a global file `Syntax`
 
 ```bash
-$ mkdir -p .config/mc/mcedit
 $ cp /usr/share/mc/syntax/Syntax .config/mc/mcedit
 $ chmod 644 ~/.config/mc/mcedit/Syntax
 ```
