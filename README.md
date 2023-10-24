@@ -21,11 +21,11 @@ file ..\*\\.json$ JSON\sFile
 include json.syntax
 ```
 
-#### b) User-specific configuration, `~/.local/share/mc/mcedit/`
+#### b) User-specific configuration, ` ~/.config/mc/mcedit`
 
 ```bash
-$ mkdir -p ~/.local/share/mc/syntax
-$ cp ./syntax/json.syntax ~/.local/share/mc/syntax
+$ mkdir -p  ~/.config/mc/mcedit
+$ cp ./syntax/json.syntax  ~/.config/mc/mcedit
 ```
 
 You need to register new file type in your `Syntax` file.
@@ -33,15 +33,15 @@ You need to register new file type in your `Syntax` file.
 Create a file `Syntax`
 
 ```bash
-$ >>~/.local/share/mc/syntax/Syntax
-$ chmod 644 ~/.local/share/mc/syntax/Syntax
+$ >>~/.config/mc/mcedit/Syntax
+$ chmod 644 ~/.config/mc/mcedit/Syntax
 ```
 
-Insert text:
+Insert text (replace <user> with your user name):
 
 ```
 file ..\*\\.json$ JSON\sFile
-include /home/<user>/.local/share/mc/syntax/json.syntax
+include /home/<user>/.config/mc/mcedit/json.syntax
 ```
 
 ### Using a script
