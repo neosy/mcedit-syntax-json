@@ -1,0 +1,40 @@
+# version 0.1
+#
+# JSON expression syntax highlighter
+# for mcedit (editor of Midnight Commander)
+#
+# Author: Neosy <neosy.dev@gmail.com>
+# (Fork from pelya)
+#
+context default
+
+    # Constants
+    keyword whole true brightcyan
+    keyword whole false brightred
+    keyword whole null yellow
+
+    # Numbers
+    keyword whole \[-\]\{0123456789\}\[0123456789\] lightgray
+    keyword whole \[-\]\{0123456789\}\[0123456789\]\.\{0123456789\}\[0123456789\] lightgray
+    keyword whole \[-\]\{0123456789\}\[0123456789\]\{eE\}\{0123456789\}\[0123456789\] lightgray
+    keyword whole \[-\]\{0123456789\}\[0123456789\]\{eE\}\{\-\+\}\{0123456789\}\[0123456789\] lightgray
+    keyword whole \[-\]\{0123456789\}\[0123456789\]\.\{0123456789\}\[0123456789\]\{eE\}\{0123456789\}\[0123456789\] lightgray
+    keyword whole \[-\]\{0123456789\}\[0123456789\]\.\{0123456789\}\[0123456789\]\{eE\}\{\-\+\}\{0123456789\}\[0123456789\] lightgray
+
+    # Separators
+    keyword { brightcyan
+    keyword } brightcyan
+    keyword [ lightgray
+    keyword ] lightgray
+    keyword , brightcyan
+    keyword : brightcyan
+
+    # Id's
+    keyword "*"*: brightmagenta
+
+#=============================
+# Strings
+context " " green
+    spellcheck
+    keyword \\\{"\\/bfnrt\} brightgreen
+    keyword \\u\{0123456789ABCDEFabcdef\}\{0123456789ABCDEFabcdef\}\{0123456789ABCDEFabcdef\}\{0123456789ABCDEFabcdef\} brightgreen

@@ -1,0 +1,3 @@
+# Json syntax @neosy
+file ..\*\\.json$ JSON\sFile
+include json.syntax
