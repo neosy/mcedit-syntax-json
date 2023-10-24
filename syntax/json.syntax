@@ -1,10 +1,12 @@
-# version 0.1
-#
 # JSON expression syntax highlighter
 # for mcedit (editor of Midnight Commander)
 #
 # Author: Neosy <neosy.dev@gmail.com>
 # (Fork from pelya)
+#
+#========================
+# version 0.1
+#=======================
 #
 context default
 
