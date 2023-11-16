@@ -23,7 +23,7 @@ SYNTAX_JSON_FILE="$SYNTAX_PATH/$SYNTAX_JSON_FILE_NAME"
 
 # Copy files *.syntax to user config
 mkdir -p $SYNTAX_PATH
-cp ${SYNTAX_MY_PATH}/*.syntax ${SYNTAX_PATH}
+cp ${SYNTAX_MY_PATH}/*.syntax ${SYNTAX_PATH} 2>/dev/null
 
 if [ -f "$SYNTAX_FILE" ]; then
     row=`cat "$SYNTAX_FILE" | grep -E '^(file)(.*)(json\\$)'`
